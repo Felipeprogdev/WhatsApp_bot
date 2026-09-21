@@ -71,8 +71,8 @@ def extrair_dados_globais(texto_usuario: str, dados_atuais: dict = None) -> dict
     - Caso tenha erros de gramática, coloque a mensagem digitada atras e logo na frente entre parenteses () a mensagem com as correções gramaticais, exemplo "armario 4 portad" APENAS NO PEDIDO ESSA CORREÇÃO GRAMATICAL
 
     Regras para 'visita_txt':
-    - Retorne "Sim" se o cliente pedir visita explicitamente ou se faltarem medidas do projeto.
-    - Retorne "Não" se o cliente já forneceu todas as dimensões.
+    - Todo e qualquer pedido/serviço exige dimensões ou medidas numéricas explícitas (ex: metros, centímetros, 2x1, etc.) caso não tenha defina "visita_txt" :"Sim".
+    - Defina "visita_txt": "Não" APENAS se o cliente já tiver informado as medidas numéricas completas do móvel.
 
     Chaves obrigatórias do JSON:
     - e_comigo: "Sim" ou "Não"
