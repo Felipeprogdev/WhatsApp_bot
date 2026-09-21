@@ -72,8 +72,7 @@ def extrair_dados_globais(texto_usuario: str, dados_atuais: dict = None) -> dict
 
     Regras para 'visita_txt':
     - Retorne "Sim" se o cliente pedir visita explicitamente ou se faltarem medidas do projeto.
-    - Retorne "Não" se o cliente recusar visita ou se já forneceu todas as dimensões.
-    - Isso pode mudar caso o cliente fale algo como: "Quero visita" ou "Não quero visita"
+    - Retorne "Não" se o cliente já forneceu todas as dimensões.
 
     Chaves obrigatórias do JSON:
     - e_comigo: "Sim" ou "Não"
