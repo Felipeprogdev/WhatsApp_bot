@@ -90,7 +90,12 @@ Para rodar a aplicação completa, você precisará manter dois serviços rodand
    pip install -r requirements.txt
    ```
 
-4. **Inicie o servidor Webhook (FastAPI):**
+4. **Instale o WhatsApp Web e as dependências auxiliares:**
+   ```bash
+   npm install whatsapp-web.js qrcode-terminal express axios
+
+
+5. **Inicie o servidor Webhook (FastAPI):**
 
    ```bash
    uvicorn main:app --reload --port 8000
